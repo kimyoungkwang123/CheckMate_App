@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.master.DetailBoardCheck"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/lastlogo2_removebg_preview"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="제목"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:id="@+id/titleLine"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="35dp"
+            android:id="@+id/titleDet"
+            android:text="test" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:layout_gravity="center"
+            android:textSize="35dp"
+            android:id="@+id/contentLine"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/contentDet"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:textSize="25dp"
+            android:text="test"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수정"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btnstyle"
+            android:id="@+id/updateBtn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:layout_toRightOf="@id/updateBtn"
+            android:background="@drawable/btnstyle"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/delBtn"/>
+
+        <Button
+            android:id="@+id/chum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="첨부파일"
+            android:layout_toLeftOf="@id/backtoListBtn"
+            android:background="@drawable/btnstyle"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목록"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btnstyle"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/backtoListBtn"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

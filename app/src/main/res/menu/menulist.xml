@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mypageitem"
+        android:title="마이페이지"/>
+    <item
+        android:id="@+id/commuitem"
+        android:title="커뮤니티" />
+    <item
+        android:id="@+id/logoutitem"
+        android:title="로그아웃" />
+    <!-- 기타 메뉴 항목 -->
+</menu>

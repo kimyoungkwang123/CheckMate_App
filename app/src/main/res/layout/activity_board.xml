@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.BoardActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/lastlogo2_removebg_preview"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="35dp"
+                    android:id="@+id/titleDet"
+                    android:layout_marginLeft="30dp"
+                    android:text="test" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="조회수 "
+                    android:layout_marginLeft="120dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/countview"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/contentDet"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:textSize="25dp"
+                android:text="test"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/boxedit"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="223dp"
+        android:id="@+id/smallBoardList"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="댓글 입력"
+                style="@style/customEditTextFontStyle"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:id="@+id/smallboardEdit"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록"
+                android:background="@drawable/btnstyle"
+                android:layout_marginLeft="65dp"
+                android:id="@+id/smallboardcommit"/>
+
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수정"
+            android:background="@drawable/btnstyle"
+            android:id="@+id/updateBtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목록"
+            android:background="@drawable/btnstyle"
+            android:layout_alignParentRight="true"
+            android:id="@+id/backtoListBtn"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

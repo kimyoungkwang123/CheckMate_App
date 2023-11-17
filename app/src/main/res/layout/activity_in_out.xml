@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.master.InOutActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/lastlogo2_removebg_preview"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                style="@style/customEditTextFontStyle"
+                android:id="@+id/searchBox"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:text="검색"
+                android:background="@drawable/btnstyle"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/searchBox"
+                android:id="@+id/searchBtn"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="당일 외출"
+                    android:id="@+id/btn_today" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="어제 외출"
+                    android:id="@+id/btn_yester" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전체 외출"
+                    android:id="@+id/btn_all"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사원명"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/searchBox"
+                android:id="@+id/name"
+                android:layout_marginRight="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="외출시간"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_below="@id/searchBox"
+                android:layout_toRightOf="@id/name"
+                android:id="@+id/intime"
+                android:layout_marginRight="55dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="복귀시간"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/searchBox"
+                android:layout_toRightOf="@id/intime"
+                android:id="@+id/outtime"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:id="@+id/inoutlist"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"
+        android:background="@drawable/btnstyle"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="end"
+        android:id="@+id/backBtn"/>
+
+</LinearLayout>

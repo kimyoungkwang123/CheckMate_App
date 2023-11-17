@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PopupTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowMinWidthMajor">60%</item> <!-- 창 너비의 최소 크기 (가로 기준) -->
+        <item name="android:windowMinWidthMinor">90%</item> <!-- 창 너비의 최소 크기 (세로 기준) -->
+
+
+
+    </style>
+    <style name="Appfont" parent="Theme.Moble_project">
+        <!--custom font-family 적용-->
+<!--        <item name="android:textViewStyle">@style/customTextViewFontStyle</item>-->
+<!--        <item name="android:buttonStyle">@style/customButtonFontStyle</item>-->
+<!--        <item name="android:editTextStyle">@style/customEditTextFontStyle</item>-->
+<!--        <item name="android:radioButtonStyle">@style/customRadioButtonFontStyle</item>-->
+<!--        <item name="android:checkboxStyle">@style/customCheckboxFontStyle</item>-->
+<!--        <item name="android:hint">@style/customTextFontStyle</item>-->
+        <item name="android:fontFamily">@font/hbsch</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+
+    </style>
+</resources>

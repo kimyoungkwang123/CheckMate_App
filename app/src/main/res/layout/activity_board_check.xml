@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.master.BoardCheckActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/lastlogo2_removebg_preview"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="검색"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            style="@style/customEditTextFontStyle"
+            android:padding="5dp"
+            android:id="@+id/searchBox"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="검색"
+            android:background="@drawable/btnstyle"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/searchBox"
+            android:id="@+id/searchBtn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시글 관리"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/searchBox"
+            android:id="@+id/pagename"/>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/pagename"
+    android:layout_below="@+id/searchBox"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="공지"
+        android:layout_marginTop="15dp"
+        android:id="@+id/commentcheck"/>
+
+    <RadioButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="일반"
+        android:layout_marginTop="15dp"
+        android:id="@+id/boardcheck"/>
+    <RadioButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="전체"
+        android:layout_marginTop="15dp"
+        android:id="@+id/allboard"/>
+
+</RadioGroup>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:id="@+id/boardcheckList"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"
+        android:background="@drawable/btnstyle"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="end"
+        android:id="@+id/backBtn"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/attendanceitem"
+        android:title="출근 대장"/>
+    <item
+        android:id="@+id/inoutcheck"
+        android:title="출입 일지" />
+    <item
+        android:id="@+id/commuitem"
+        android:title="게시글 관리" />
+    <item
+        android:id="@+id/logoutitem"
+        android:title="로그아웃" />
+    <!-- 기타 메뉴 항목 -->
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">moble_project</string>
+    <string name="auth_error_message">응 오류</string>
+    <string name="auth_success_message">성공</string>
+    <string name="auth_fail_message">실패</string>
+    <string name="display_format">%1$s  %2$s %3$s  %4$s  %5$s</string>
+    <string name="not_available">N/A</string>
+</resources>
